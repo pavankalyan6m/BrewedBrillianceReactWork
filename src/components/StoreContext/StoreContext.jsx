@@ -28,6 +28,7 @@ export const StoreProvider = ({ children }) => {
             "Cache-Control": "max-age=604800", // Cache images for 7 days (adjust as needed)
           },
         });
+
         const menuItems = response.data.map((item) => ({
           ...item,
           selectedSize: "regular",
